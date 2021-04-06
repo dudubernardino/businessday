@@ -1,6 +1,6 @@
-<h3 align="center">
+<h2 align="center">
   Business Day Project
-</h3>
+</h2>
 
 <p align="center">💼📊 A lib that calculates a deadline considering only working days business days</p>
 
