@@ -1,5 +1,5 @@
 {
-  "name": "businessday",
+  "name": "businessday-workingdays",
   "version": "1.0.1",
   "description": "💼📊 A lib that calculates a deadline considering only working days business days",
   "main": "src/index.js",
