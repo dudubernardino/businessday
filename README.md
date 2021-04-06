@@ -22,6 +22,9 @@ Technologies that I used to develop this api
 
 - [Node.js](https://nodejs.org/en/)
 - [Date-fns](https://date-fns.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 
 ## 💻 Getting started
 
