@@ -39,13 +39,19 @@ $ yarn add businessday-workingdays
 **Available methods**
 
 ```js
-getDeadline(new Date(), 5);
+getDeadline({
+    date: new Date(),
+    deadline: 5
+})
 
 // This method returns the added informed date of 5 business days
 ```
 
 ```js
-getdifferenceInBusinessDays(new Date(), 5);
+getdifferenceInBusinessDays({
+    date: new Date(),
+    deadline: 5
+});
 
 // This method returns the number of working days between the end date and the one informed
 ```

@@ -1,29 +1,45 @@
 {
-  "name": "businessday-workingdays",
-  "version": "1.0.2",
-  "description": "💼📊 A lib that calculates a deadline considering only working days business days",
-  "main": "src/index.js",
-  "bin": "src/index.js",
-  "scripts": {
-    "start": "node src/index.js"
-  },
-  "keywords": [
-    "business day",
-    "working days",
-    "javascript",
-    "js"
-  ],
-  "author": "Eduardo Bernardino",
-  "license": "MIT",
-  "dependencies": {
-    "date-fns": "^2.19.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dudubernardino/businessday"
-  },
-  "bugs": {
-    "url": "https://github.com/dudubernardino/businessday/issues"
-  },
-  "homepage": "https://github.com/dudubernardino/businessday#readme"
+    "name": "businessday-workingdays",
+    "version": "1.0.4",
+    "description": "💼📊 A lib that calculates a deadline considering only working days business days",
+    "main": "dist/index.js",
+    "bin": "dist/index.js",
+    "scripts": {
+        "start": "node src/index.js",
+        "build": "tsc",
+        "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/index.ts"
+    },
+    "keywords": [
+        "business day",
+        "working days",
+        "javascript",
+        "js"
+    ],
+    "author": "Eduardo Bernardino",
+    "license": "MIT",
+    "dependencies": {
+        "date-fns": "^2.19.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dudubernardino/businessday"
+    },
+    "bugs": {
+        "url": "https://github.com/dudubernardino/businessday/issues"
+    },
+    "homepage": "https://github.com/dudubernardino/businessday#readme",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.21.0",
+        "@typescript-eslint/parser": "^4.21.0",
+        "eslint": "^7.23.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-import-resolver-typescript": "^2.4.0",
+        "eslint-plugin-import": "2.22.1",
+        "eslint-plugin-import-helpers": "^1.1.0",
+        "eslint-plugin-prettier": "^3.3.1",
+        "prettier": "^2.2.1",
+        "ts-node-dev": "^1.1.6",
+        "typescript": "^4.2.3"
+    }
 }

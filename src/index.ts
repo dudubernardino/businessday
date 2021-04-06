@@ -1,19 +1,16 @@
-#!/usr/bin/env node
+import { addDays, differenceInBusinessDays, isSaturday, isSunday } from 'date-fns';
 
-const {
-  addDays,
-  differenceInBusinessDays,
-  isSaturday,
-  isSunday,
-} = require("date-fns");
+interface IDeadline {
+  date: Date;
+  deadline: number;
+}
 
-const getDeadline = (date, deadline) => {
+const getDeadline = ({ date, deadline }: IDeadline): Date => {
   let newDeadline = addDays(date, deadline);
 
   const businessDays = differenceInBusinessDays(newDeadline, date);
 
-  let difference;
-  difference = deadline - businessDays;
+  const difference = deadline - businessDays;
 
   newDeadline = addDays(newDeadline, difference);
 
@@ -28,8 +25,8 @@ const getDeadline = (date, deadline) => {
   return newDeadline;
 };
 
-const getdifferenceInBusinessDays = (date, deadline) => {
-  let newDeadline = addDays(date, deadline);
+const getdifferenceInBusinessDays = ({ date, deadline }: IDeadline): number => {
+  const newDeadline = addDays(date, deadline);
 
   const businessDays = differenceInBusinessDays(newDeadline, date);
 
