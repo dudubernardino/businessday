@@ -16,9 +16,7 @@ const getDeadline = ({ date, deadline }: IDeadline): Date => {
 
   if (isSaturday(newDeadline)) {
     newDeadline = addDays(newDeadline, 2);
-  }
-
-  if (isSunday(newDeadline)) {
+  } else if (isSunday(newDeadline)) {
     newDeadline = addDays(newDeadline, 1);
   }
 
